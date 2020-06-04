@@ -1,7 +1,51 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <style>
+    body{
+      background-color: #262626; /* For browsers that do not support gradients */
+    }
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
 
-<body>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-wH2uoxN_HU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</body>
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
 
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    </style>
+  </head>
+  <body>
+    <a class="button" style="background-color: #a30202;vertical-align:middle" href="https://killercodes.github.io/puffer-firetv-example/DD-News-HD.html"><span>DD News</span></a>
+  </body>
 </html>
