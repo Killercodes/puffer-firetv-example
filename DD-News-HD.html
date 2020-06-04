@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DD News HD</title>
+<style>
+body {
+  overflow: hidden;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+  $(window).resize(function(){
+    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+  });
+});
+</script>
+</head>
+
+<body>
+<iframe id="video" src="https://www.youtube.com/embed/-wH2uoxN_HU?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
